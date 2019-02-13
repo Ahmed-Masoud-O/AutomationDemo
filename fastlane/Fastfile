@@ -31,5 +31,5 @@ platform :ios do
   #   gym # Build your app - more options available
   #   deliver(force: true)
   #   # frameit
-  end
+  # end
 end
