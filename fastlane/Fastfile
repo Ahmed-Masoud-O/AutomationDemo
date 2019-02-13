@@ -13,6 +13,11 @@ default_platform :ios
 # Fastfile actions accept additional configuration, but
 # don't worry, fastlane will prompt you for required
 # info which you can add here later
+desc "Runs all the tests"
+  lane :test do
+    scan
+    snapshot
+  end
 lane :beta do
   # build your iOS app
   build_app(
