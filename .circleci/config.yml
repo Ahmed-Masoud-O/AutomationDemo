@@ -101,16 +101,16 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test
+      # - adhoc:
+      #     filters:
+      #       branches:
+      #         only: master
+      #     requires:
+      #       - build-and-test
       - beta:
           filters:
             branches:
               only: master
-          requires:
-            - build-and-test
-      #- beta:
-          #filters:
-            #branches:
-              #only: master
-          #requires:
-            #- build-and-test
+          # requires:
+          #   - build-and-test
 
