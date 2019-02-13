@@ -22,6 +22,7 @@ platform :ios do
   lane :beta do
     match(type: "appstore")
     gym(export_method: "app-store")
+    upload_to_testflight(changelog: "Add rocket emoji")
   end
 
   # desc "Deploy a new version to the App Store"
