@@ -15,10 +15,19 @@
 		C5D5CE4922142AC30070860C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D5CE4822142AC30070860C /* Assets.xcassets */; };
 		C5D5CE4C22142AC30070860C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D5CE4A22142AC30070860C /* LaunchScreen.storyboard */; };
 		C5D5CE5722142AC30070860C /* AutomationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5CE5622142AC30070860C /* AutomationDemoTests.swift */; };
+		C5D5CE9222143B0C0070860C /* AutomationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5CE9122143B0C0070860C /* AutomationDemoUITests.swift */; };
+		C5D5CE9A22143B350070860C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5CE9922143B350070860C /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C5D5CE5322142AC30070860C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5D5CE3622142AC30070860C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5D5CE3D22142AC30070860C;
+			remoteInfo = AutomationDemo;
+		};
+		C5D5CE9422143B0C0070860C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5D5CE3622142AC30070860C /* Project object */;
 			proxyType = 1;
@@ -43,6 +52,10 @@
 		C5D5CE5222142AC30070860C /* AutomationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D5CE5622142AC30070860C /* AutomationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationDemoTests.swift; sourceTree = "<group>"; };
 		C5D5CE5822142AC30070860C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D5CE8F22143B0C0070860C /* AutomationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D5CE9122143B0C0070860C /* AutomationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationDemoUITests.swift; sourceTree = "<group>"; };
+		C5D5CE9322143B0C0070860C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D5CE9922143B350070860C /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		EF1ACDAC6075191AB6A112D1 /* Pods_AutomationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +76,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5D5CE8C22143B0C0070860C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +100,7 @@
 			children = (
 				C5D5CE4022142AC30070860C /* AutomationDemo */,
 				C5D5CE5522142AC30070860C /* AutomationDemoTests */,
+				C5D5CE9022143B0C0070860C /* AutomationDemoUITests */,
 				C5D5CE3F22142AC30070860C /* Products */,
 				CF88F5A3D217B0A679C1F8B0 /* Pods */,
 				27F247A2041C504499A66213 /* Frameworks */,
@@ -91,6 +112,7 @@
 			children = (
 				C5D5CE3E22142AC30070860C /* AutomationDemo.app */,
 				C5D5CE5222142AC30070860C /* AutomationDemoTests.xctest */,
+				C5D5CE8F22143B0C0070860C /* AutomationDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +137,16 @@
 				C5D5CE5822142AC30070860C /* Info.plist */,
 			);
 			path = AutomationDemoTests;
+			sourceTree = "<group>";
+		};
+		C5D5CE9022143B0C0070860C /* AutomationDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5D5CE9122143B0C0070860C /* AutomationDemoUITests.swift */,
+				C5D5CE9322143B0C0070860C /* Info.plist */,
+				C5D5CE9922143B350070860C /* SnapshotHelper.swift */,
+			);
+			path = AutomationDemoUITests;
 			sourceTree = "<group>";
 		};
 		CF88F5A3D217B0A679C1F8B0 /* Pods */ = {
@@ -168,6 +200,24 @@
 			productReference = C5D5CE5222142AC30070860C /* AutomationDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C5D5CE8E22143B0C0070860C /* AutomationDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D5CE9622143B0C0070860C /* Build configuration list for PBXNativeTarget "AutomationDemoUITests" */;
+			buildPhases = (
+				C5D5CE8B22143B0C0070860C /* Sources */,
+				C5D5CE8C22143B0C0070860C /* Frameworks */,
+				C5D5CE8D22143B0C0070860C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5D5CE9522143B0C0070860C /* PBXTargetDependency */,
+			);
+			name = AutomationDemoUITests;
+			productName = AutomationDemoUITests;
+			productReference = C5D5CE8F22143B0C0070860C /* AutomationDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +232,10 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					C5D5CE5122142AC30070860C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C5D5CE3D22142AC30070860C;
+					};
+					C5D5CE8E22143B0C0070860C = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = C5D5CE3D22142AC30070860C;
 					};
@@ -202,6 +256,7 @@
 			targets = (
 				C5D5CE3D22142AC30070860C /* AutomationDemo */,
 				C5D5CE5122142AC30070860C /* AutomationDemoTests */,
+				C5D5CE8E22143B0C0070860C /* AutomationDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +273,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C5D5CE5022142AC30070860C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D5CE8D22143B0C0070860C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,6 +353,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5D5CE8B22143B0C0070860C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D5CE9222143B0C0070860C /* AutomationDemoUITests.swift in Sources */,
+				C5D5CE9A22143B350070860C /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +369,11 @@
 			isa = PBXTargetDependency;
 			target = C5D5CE3D22142AC30070860C /* AutomationDemo */;
 			targetProxy = C5D5CE5322142AC30070860C /* PBXContainerItemProxy */;
+		};
+		C5D5CE9522143B0C0070860C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5D5CE3D22142AC30070860C /* AutomationDemo */;
+			targetProxy = C5D5CE9422143B0C0070860C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -519,6 +595,44 @@
 			};
 			name = Release;
 		};
+		C5D5CE9722143B0C0070860C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HFLYY4VU6;
+				INFOPLIST_FILE = AutomationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automation.AutomationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutomationDemo;
+			};
+			name = Debug;
+		};
+		C5D5CE9822143B0C0070860C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HFLYY4VU6;
+				INFOPLIST_FILE = AutomationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automation.AutomationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutomationDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -545,6 +659,15 @@
 			buildConfigurations = (
 				C5D5CE5F22142AC30070860C /* Debug */,
 				C5D5CE6022142AC30070860C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D5CE9622143B0C0070860C /* Build configuration list for PBXNativeTarget "AutomationDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D5CE9722143B0C0070860C /* Debug */,
+				C5D5CE9822143B0C0070860C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
