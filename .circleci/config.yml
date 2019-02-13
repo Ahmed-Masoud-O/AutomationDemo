@@ -77,7 +77,7 @@ jobs:
           name: Fastlane
           command: bundle exec fastlane $FASTLANE_LANE
       - store_artifacts:
-          path: output/AutomationDemo.ipa
+          path: output/ipas/AutomationDemo.ipa
 
   beta:
     macos:
@@ -94,14 +94,14 @@ jobs:
           name: Fastlane
           command: bundle exec fastlane $FASTLANE_LANE
       - store_artifacts:
-          path: output/AutomationDemo.ipa
+          path: output/ipas/AutomationDemo.ipa
 
 workflows:
   version: 2
   build-test-adhoc:
     jobs:
       - build-and-test
-      - adhoc:
+      - beta:
           filters:
             branches:
               only: master
